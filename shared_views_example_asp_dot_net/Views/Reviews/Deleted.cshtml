@@ -10,13 +10,17 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Page Header
+            @ViewBag.Title
             <small>Optional description</small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-            <li class="active">Here</li>
-        </ol>
+        <div class="row">
+            <div class=" col-md-12">
+                <div class="upper_left pull-right">
+
+                    <button type="submit" class="btn btn-danger "> <i class="fa fa-trash"></i> Delete</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Main content -->
@@ -27,11 +31,168 @@
         | Your Page Content Here |
         -------------------------->
 
-        <h2>Deleted</h2>
+        <div class="col-md-12">
+            <!-- Horizontal Form -->
+            <div class="box box-primary">
+                <div class="box-header"></div>
+                <!-- /.box-header -->
+                <!-- form start -->
+                <form class="form-horizontal">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">Created from <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                            <div class="col-sm-4">
+                                <input type="email" class="form-control" id="inpugtEmail3" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Created to <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                            <div class="col-sm-4">
+                                <input type="password" class="form-control" id="inputPassfdword3" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">IP addressess <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                            <div class="col-sm-4">
+                                <input type="password" class="form-control" id="inputPassfwords3" placeholder="Password">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Activity log type <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                            <div class="col-sm-4">
+                                <input type="password" class="form-control" id="inputPassgwords3" placeholder="Password">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-primary btn-lg "> <i class="fa fa-search"></i> Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+
+                </form>
+            </div>
+
+
+
+            <div class="box">
+
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Rendering engine</th>
+                                <th>Browser</th>
+                                <th>Platform(s)</th>
+                                <th>Engine version</th>
+                                <th>CSS grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Trident</td>
+                                <td>
+                                    Internet
+                                    Explorer 4.0
+                                </td>
+                                <td>Win 95+</td>
+                                <td> 4</td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>
+                                    Internet
+                                    Explorer 5.0
+                                </td>
+                                <td>Win 95+</td>
+                                <td>5</td>
+                                <td>C</td>
+                            </tr>
+
+                            <tr>
+                                <td>Other browsers</td>
+                                <td>All others</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>U</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+
+        </div>
 
 
     </section>
     <!-- /.content -->
     <!-- /.content -->
 </div>
+
+@section styles {
+
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/")bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/")bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/")bower_components/Ionicons/css/ionicons.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/")bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/")dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/")dist/css/skins/_all-skins.min.css">
+}
+
+
+@section scripts
+{
+
+    <script src="@Url.Content("~/Content/")bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="@Url.Content("~/Content/")bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="@Url.Content("~/Content/")dist/js/adminlte.min.js"></script>
+    <script src="@Url.Content("~/Content/")bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="@Url.Content("~/Content/")bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="@Url.Content("~/Content/")bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="@Url.Content("~/Content/")bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <!-- AdminLTE for demo purposes -->
+    <script src="@Url.Content("~/Content/")dist/js/demo.js"></script>
+    <!-- page script -->
+    <script>
+        $(function () {
+            $('#example').DataTable()
+            $('#example1').DataTable({
+                'paging': true,
+                'lengthChange': true,
+                'searching': true,
+                'ordering': true,
+                'info': true,
+                'autoWidth': true
+            })
+        })
+    </script>
+}
 

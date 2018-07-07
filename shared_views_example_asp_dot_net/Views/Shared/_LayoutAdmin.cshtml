@@ -17,6 +17,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="@Url.Content("~/Content/")bower_components/Ionicons/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="@Url.Content("~/Content/")dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="@Url.Content("~/Content/")CustomStyle.css">
+    @RenderSection("styles", false)
     <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
           page. However, you can choose any other skin. Make sure you
           apply the skin class to the body tag so the changes take effect. -->
@@ -55,16 +57,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
 
 
-        <!-- ./wrapper -->
-        <!-- REQUIRED JS SCRIPTS -->
-        <!-- jQuery 3 -->
-        <script src="@Url.Content("~/Content/")bower_components/jquery/dist/jquery.min.js"></script>
-        <!-- Bootstrap 3.3.7 -->
-        <script src="@Url.Content("~/Content/")bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <!-- AdminLTE App -->
-        <script src="@Url.Content("~/Content/")dist/js/adminlte.min.js"></script>
 
-        <!-- Optionally, you can add Slimscroll and FastClick plugins.
+    <!-- ./wrapper -->
+
+
+    @RenderSection("scripts", false)
+    <!-- Optionally, you can add Slimscroll and FastClick plugins.
     Both of these plugins are recommended to enhance the
     user experience. -->
 </body>
