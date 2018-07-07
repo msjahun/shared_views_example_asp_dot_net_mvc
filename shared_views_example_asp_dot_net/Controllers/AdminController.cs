@@ -11,7 +11,7 @@ namespace shared_views_example_asp_dot_net.Controllers
         // GET: Admin
         public ActionResult Index()
         {
-            return View("Index");
+            return RedirectToAction("Log", "ActivityLog");
         }
     }
 }
