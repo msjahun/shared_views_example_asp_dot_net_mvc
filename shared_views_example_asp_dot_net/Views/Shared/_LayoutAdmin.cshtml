@@ -37,20 +37,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="wrapper">
 
         <!-- Main Header -->
-        @RenderPage("~/Views/Admin/_header.cshtml", null)
+        @RenderPage("~/Views/Admin/Admin_Shared/_header.cshtml", null)
         <!-- Left side column. contains the logo and sidebar -->
 
-        @RenderPage("~/Views/Admin/_side_menu.cshtml", null)
+        @RenderPage("~/Views/Admin/Admin_Shared/_side_menu.cshtml", null)
 
 
         <!-- Content Wrapper. Contains page content -->
         @RenderBody()
         <!-- /.content-wrapper -->
         <!-- Main Footer -->
-        @RenderPage("~/Views/Admin/_footer.cshtml", null)
+        @RenderPage("~/Views/Admin/Admin_Shared/_footer.cshtml", null)
         <!-- /.Main Footer -->
         <!-- Control Sidebar -->
-        @RenderPage("~/Views/Admin/_control_sidebar.cshtml", null)
+        @RenderPage("~/Views/Admin/Admin_Shared/_control_sidebar.cshtml", null)
         <!-- /.control-sidebar -->
     </div>
 
