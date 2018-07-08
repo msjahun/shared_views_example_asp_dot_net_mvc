@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "_Users_list";
+    ViewBag.Title = "Users";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
@@ -17,7 +17,21 @@
             <div class=" col-md-12">
                 <div class="upper_left pull-right">
 
-                    <button type="submit" class="btn btn-danger "> <i class="fa fa-trash"></i> Delete</button>
+                    <button type="submit" class="btn btn-primary "> <i class="fa fa-plus-square"></i> Add New</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success btn-flat">Export</button>
+                        <button type="button" class="btn btn-success btn-flat dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,36 +53,69 @@
                 <!-- form start -->
                 <form class="form-horizontal">
                     <div class="box-body">
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Created from <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                        <div class="row">
+                            <div class=" col-md-6">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Email <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
-                            <div class="col-sm-4">
-                                <input type="email" class="form-control" id="inpugtEmail3" placeholder="Email">
+                                    <div class="col-sm-4">
+                                        <input type="email" class="form-control" id="inpugtEmail3" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-4 control-label">First name <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                    <div class="col-sm-3">
+                                        <input type="password" class="form-control" id="inputPassfdword3" placeholder="Password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-4 control-label">Last name <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                    <div class="col-sm-4">
+                                        <input type="password" class="form-control" id="inputPassfwords3" placeholder="Password">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-4 control-label">Date of birth <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                    <div class="col-sm-4">
+                                        <input type="password" class="form-control" id="inputPassgwords3" placeholder="Password">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Created to <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <div class=" col-md-6">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Phone <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
-                            <div class="col-sm-4">
-                                <input type="password" class="form-control" id="inputPassfdword3" placeholder="Password">
-                            </div>
-                        </div>
+                                    <div class="col-sm-4">
+                                        <input type="email" class="form-control" id="inpugtEmail3" placeholder="Email">
+                                    </div>
+                                </div>
 
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">IP addressess <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-4 control-label">IP address <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
-                            <div class="col-sm-4">
-                                <input type="password" class="form-control" id="inputPassfwords3" placeholder="Password">
-                            </div>
-                        </div>
+                                    <div class="col-sm-4">
+                                        <input type="password" class="form-control" id="inputPassfdword3" placeholder="Password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-4 control-label">Customer role <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                                    <div class="col-sm-4">
+                                        <input type="password" class="form-control" id="inputPassfwords3" placeholder="Password">
+                                    </div>
+                                </div>
 
 
-                        <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Activity log type <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
-                            <div class="col-sm-4">
-                                <input type="password" class="form-control" id="inputPassgwords3" placeholder="Password">
                             </div>
                         </div>
 
@@ -93,42 +140,108 @@
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Rendering engine</th>
-                                <th>Browser</th>
-                                <th>Platform(s)</th>
-                                <th>Engine version</th>
-                                <th>CSS grade</th>
+                                <th><input type="checkbox"></th>
+                                <th>Email</th>
+                                <th>Name</th>
+                                <th>User role</th>
+                                <th>Phone</th>
+                                <th>Active</th>
+                                <th>Created on</th>
+                                <th>Last activity</th>
+                                <th>Edit</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Trident</td>
-                                <td>
-                                    Internet
-                                    Explorer 4.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td> 4</td>
-                                <td>X</td>
+                                <td><input type="checkbox"></td>
+                                <td>msjahun@live.com</td>
+                                <td>Musa Suleiman Jahun</td>
+                                <td>Administrator</td>
+                                <td>+905338264432</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>12/23/18 10:00AM</td>
+                                <td>12/23/18 11:00AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
                             </tr>
                             <tr>
-                                <td>Trident</td>
-                                <td>
-                                    Internet
-                                    Explorer 5.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td>5</td>
-                                <td>C</td>
+                                <td><input type="checkbox"></td>
+                                <td>msjahun@live.com</td>
+                                <td>Musa Suleiman Jahun</td>
+                                <td>Administrator</td>
+                                <td>+905338264432</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>12/23/18 10:00AM</td>
+                                <td>12/23/18 11:00AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>msjahun@live.com</td>
+                                <td>Musa Suleiman Jahun</td>
+                                <td>Administrator</td>
+                                <td>+905338264432</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>12/23/18 10:00AM</td>
+                                <td>12/23/18 11:00AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>msjahun@live.com</td>
+                                <td>Musa Suleiman Jahun</td>
+                                <td>Administrator</td>
+                                <td>+905338264432</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>12/23/18 10:00AM</td>
+                                <td>12/23/18 11:00AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>msjahun@live.com</td>
+                                <td>Musa Suleiman Jahun</td>
+                                <td>Administrator</td>
+                                <td>+905338264432</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>12/23/18 10:00AM</td>
+                                <td>12/23/18 11:00AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>msjahun@live.com</td>
+                                <td>Musa Suleiman Jahun</td>
+                                <td>Administrator</td>
+                                <td>+905338264432</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>12/23/18 10:00AM</td>
+                                <td>12/23/18 11:00AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>msjahun@live.com</td>
+                                <td>Musa Suleiman Jahun</td>
+                                <td>Administrator</td>
+                                <td>+905338264432</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>12/23/18 10:00AM</td>
+                                <td>12/23/18 11:00AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>msjahun@live.com</td>
+                                <td>Musa Suleiman Jahun</td>
+                                <td>Administrator</td>
+                                <td>+905338264432</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>12/23/18 10:00AM</td>
+                                <td>12/23/18 11:00AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
                             </tr>
 
-                            <tr>
-                                <td>Other browsers</td>
-                                <td>All others</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>U</td>
-                            </tr>
+
                         </tbody>
 
                     </table>

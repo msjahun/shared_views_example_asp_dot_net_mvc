@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "_system_Log";
+    ViewBag.Title = "System Log";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
@@ -17,7 +17,8 @@
             <div class=" col-md-12">
                 <div class="upper_left pull-right">
 
-                    <button type="submit" class="btn btn-danger "> <i class="fa fa-trash"></i> Delete</button>
+                    <button type="submit" class="btn btn-danger "> <i class="fa fa-trash"></i> Delete selected</button>
+                    <button type="submit" class="btn btn-primary "> <i class="fa fa-trash"></i> Clear log</button>
                 </div>
             </div>
         </div>
@@ -56,7 +57,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">IP addressess <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">Message <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
                             <div class="col-sm-4">
                                 <input type="password" class="form-control" id="inputPassfwords3" placeholder="Password">
@@ -65,7 +66,7 @@
 
 
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Activity log type <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">Log level <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
                             <div class="col-sm-4">
                                 <input type="password" class="form-control" id="inputPassgwords3" placeholder="Password">
@@ -93,41 +94,48 @@
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Rendering engine</th>
-                                <th>Browser</th>
-                                <th>Platform(s)</th>
-                                <th>Engine version</th>
-                                <th>CSS grade</th>
+                                <th><input type="checkbox"></th>
+                                <th>Log level</th>
+                                <th>Short message</th>
+                                <th>Created on</th>
+                                <th>View</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Trident</td>
-                                <td>
-                                    Internet
-                                    Explorer 4.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td> 4</td>
-                                <td>X</td>
+                                <td><input type="checkbox"></td>
+                                <td>Warning</td>
+                                <td>Resource string (admin.system.system) not found</td>
+                                <td>7/12/2018 11:26:17AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-eye"></i> View</button></td>
                             </tr>
                             <tr>
-                                <td>Trident</td>
-                                <td>
-                                    Internet
-                                    Explorer 5.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td>5</td>
-                                <td>C</td>
+                                <td><input type="checkbox"></td>
+                                <td>Error</td>
+                                <td>Error 404. The requested page is not found</td>
+                                <td>7/12/2018 11:26:17AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-eye"></i> View</button></td>
                             </tr>
-
                             <tr>
-                                <td>Other browsers</td>
-                                <td>All others</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>U</td>
+                                <td><input type="checkbox"></td>
+                                <td>Warning</td>
+                                <td>Resource string (admin.system.system) not found</td>
+                                <td>7/12/2018 11:26:17AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-eye"></i> View</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Warning</td>
+                                <td>Resource string (admin.system.system) not found</td>
+                                <td>7/12/2018 11:26:17AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-eye"></i> View</button></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>Warning</td>
+                                <td>Resource string (admin.system.system) not found</td>
+                                <td>7/12/2018 11:26:17AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-eye"></i> View</button></td>
                             </tr>
                         </tbody>
 
