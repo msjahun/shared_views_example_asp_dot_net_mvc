@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "CancelRequest";
+    ViewBag.Title = "Cancel booking/reservation Request";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
@@ -18,7 +18,7 @@
             <div class=" col-md-12">
                 <div class="upper_left pull-right">
 
-                    <button type="submit" class="btn btn-danger "> <i class="fa fa-trash"></i> Delete</button>
+                   
                 </div>
             </div>
         </div>
@@ -41,7 +41,7 @@
                 <form class="form-horizontal">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Created from <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <label for="inputEmail3" class="col-sm-2 control-label">Cancel request Id <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
                             <div class="col-sm-4">
                                 <input type="email" class="form-control" id="inpugtEmail3" placeholder="Email">
@@ -49,7 +49,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Created to <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">Booking Id <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
                             <div class="col-sm-4">
                                 <input type="password" class="form-control" id="inputPassfdword3" placeholder="Password">
@@ -57,7 +57,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">IP addressess <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">Start date <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
                             <div class="col-sm-4">
                                 <input type="password" class="form-control" id="inputPassfwords3" placeholder="Password">
@@ -66,12 +66,22 @@
 
 
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Activity log type <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">End date <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
                             <div class="col-sm-4">
                                 <input type="password" class="form-control" id="inputPassgwords3" placeholder="Password">
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Cancelation status <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                            <div class="col-sm-4">
+                                <input type="password" class="form-control" id="inputPassgwords3" placeholder="Password">
+                            </div>
+                        </div>
+
+                        
 
 
                         <div class="form-group">
@@ -94,41 +104,87 @@
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Rendering engine</th>
-                                <th>Browser</th>
-                                <th>Platform(s)</th>
-                                <th>Engine version</th>
-                                <th>CSS grade</th>
+                                <th>ID</th>
+                                <th>Room</th>
+                                <th>User</th>
+                                <th>Booking #</th>
+                                <th>Cancelation request status</th>
+                                <th>Date</th>
+                                <th>Edit</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Trident</td>
-                                <td>
-                                    Internet
-                                    Explorer 4.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td> 4</td>
-                                <td>X</td>
+                                <td>#133</td>
+                                <td>Alfam B block 112</td>
+                                <td>msjahun@live.com</td>
+                                <td>#213</td>
+                                <td>Approved</td>
+                                <td>12/10/10 12:11:01AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
                             </tr>
                             <tr>
-                                <td>Trident</td>
-                                <td>
-                                    Internet
-                                    Explorer 5.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td>5</td>
-                                <td>C</td>
+                                <td>#133</td>
+                                <td>Alfam B block 112</td>
+                                <td>msjahun@live.com</td>
+                                <td>#213</td>
+                                <td>Approved</td>
+                                <td>12/10/10 12:11:01AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
                             </tr>
-
                             <tr>
-                                <td>Other browsers</td>
-                                <td>All others</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>U</td>
+                                <td>#133</td>
+                                <td>Alfam B block 112</td>
+                                <td>msjahun@live.com</td>
+                                <td>#213</td>
+                                <td>Approved</td>
+                                <td>12/10/10 12:11:01AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>#133</td>
+                                <td>Alfam B block 112</td>
+                                <td>msjahun@live.com</td>
+                                <td>#213</td>
+                                <td>Approved</td>
+                                <td>12/10/10 12:11:01AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>#133</td>
+                                <td>Alfam B block 112</td>
+                                <td>msjahun@live.com</td>
+                                <td>#213</td>
+                                <td>Approved</td>
+                                <td>12/10/10 12:11:01AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>#133</td>
+                                <td>Alfam B block 112</td>
+                                <td>msjahun@live.com</td>
+                                <td>#213</td>
+                                <td>Approved</td>
+                                <td>12/10/10 12:11:01AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>#133</td>
+                                <td>Alfam B block 112</td>
+                                <td>msjahun@live.com</td>
+                                <td>#213</td>
+                                <td>Approved</td>
+                                <td>12/10/10 12:11:01AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>#133</td>
+                                <td>Alfam B block 112</td>
+                                <td>msjahun@live.com</td>
+                                <td>#213</td>
+                                <td>Approved</td>
+                                <td>12/10/10 12:11:01AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button></td>
                             </tr>
                         </tbody>
 
