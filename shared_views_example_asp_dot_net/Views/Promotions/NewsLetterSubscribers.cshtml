@@ -17,7 +17,8 @@
             <div class=" col-md-12">
                 <div class="upper_left pull-right">
 
-                    <button type="submit" class="btn btn-danger "> <i class="fa fa-trash"></i> Delete</button>
+                    <button type="submit" class="btn btn-success "> <i class="fa fa-download"></i> Export to CSV</button>
+                    <button type="submit" class="btn btn-primary "> <i class="fa fa-upload"></i> Import from CSV</button>
                 </div>
             </div>
         </div>
@@ -40,7 +41,7 @@
                 <form class="form-horizontal">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">Created from <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <label for="inputEmail3" class="col-sm-2 control-label">Start date <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
                             <div class="col-sm-4">
                                 <input type="email" class="form-control" id="inpugtEmail3" placeholder="Email">
@@ -48,7 +49,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Created to <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">End date <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
                             <div class="col-sm-4">
                                 <input type="password" class="form-control" id="inputPassfdword3" placeholder="Password">
@@ -56,7 +57,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">IP addressess <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">Email <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
                             <div class="col-sm-4">
                                 <input type="password" class="form-control" id="inputPassfwords3" placeholder="Password">
@@ -65,7 +66,15 @@
 
 
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">Activity log type <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                            <label for="inputPassword3" class="col-sm-2 control-label">Active <i class="fa fa-question-circle" aria-hidden="true"></i></label>
+
+                            <div class="col-sm-4">
+                                <input type="password" class="form-control" id="inputPassgwords3" placeholder="Password">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">Customer roles <i class="fa fa-question-circle" aria-hidden="true"></i></label>
 
                             <div class="col-sm-4">
                                 <input type="password" class="form-control" id="inputPassgwords3" placeholder="Password">
@@ -93,41 +102,36 @@
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th>Rendering engine</th>
-                                <th>Browser</th>
-                                <th>Platform(s)</th>
-                                <th>Engine version</th>
-                                <th>CSS grade</th>
+                                <th>Email</th>
+                                <th>Active</th>
+                                <th>Subscribed on</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Trident</td>
-                                <td>
-                                    Internet
-                                    Explorer 4.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td> 4</td>
-                                <td>X</td>
+                                <td>msjahun@live.com</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>3/2/2018 12:22:10AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button> <button type="submit" class="btn btn-danger "> <i class="fa fa-times"></i> Delete</button></td>
                             </tr>
                             <tr>
-                                <td>Trident</td>
-                                <td>
-                                    Internet
-                                    Explorer 5.0
-                                </td>
-                                <td>Win 95+</td>
-                                <td>5</td>
-                                <td>C</td>
+                                <td>msjahun@live.com</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>3/2/2018 12:22:10AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button> <button type="submit" class="btn btn-danger "> <i class="fa fa-times"></i> Delete</button></td>
                             </tr>
-
                             <tr>
-                                <td>Other browsers</td>
-                                <td>All others</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>U</td>
+                                <td>msjahun@live.com</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>3/2/2018 12:22:10AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button> <button type="submit" class="btn btn-danger "> <i class="fa fa-times"></i> Delete</button></td>
+                            </tr>
+                            <tr>
+                                <td>msjahun@live.com</td>
+                                <td><i class="fa fa-check" aria-hidden="true"></i></td>
+                                <td>3/2/2018 12:22:10AM</td>
+                                <td> <button type="submit" class="btn btn-primary "> <i class="fa fa-pencil"></i> Edit</button> <button type="submit" class="btn btn-danger "> <i class="fa fa-times"></i> Delete</button></td>
                             </tr>
                         </tbody>
 
